@@ -23,10 +23,9 @@ What it *adds*: demo of a quick way to bring in HighChart.
     ganache-cli -b 3 -p 8545
     ```
 
-4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
+4. Compile and migrate the smart contracts.
     ```javascript
-    compile
-    migrate
+    npm run populate
     ```
 
 5. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.

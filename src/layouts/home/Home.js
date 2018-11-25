@@ -49,14 +49,12 @@ class Home extends Component {
   componentDidUpdate(prevProps) {
     const val = Object.values(this.props.Ballot.getAllProposal)[0];
     //val && this.setProposals();
-    console.log('val', val);
     if (!isEqual(
       prevProps.Ballot.getAllProposal,
       this.props.Ballot.getAllProposal)
     ) {
       this.setProposals();
     }
-
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -111,6 +109,8 @@ class Home extends Component {
             <ReactHighcharts config={chartConfig} />
 
             <h2>Ballot</h2>
+            <ContractForm contract="Ballot" method="vote" />
+            <br/>
 
             <p><strong>all proposals</strong>:<ContractData contract="Ballot" method="getAllProposal"/></p>
             {listItemsProposals}
@@ -122,7 +122,7 @@ class Home extends Component {
             <br/>
             <ContractForm contract="Ballot" method="giveRightToVote" />
             <br/>
-            <ContractForm contract="Ballot" method="vote" />
+
 
 
             <br/>
