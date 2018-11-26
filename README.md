@@ -7,22 +7,22 @@ Medium post: https://medium.com/@linda0511ny/highchart-with-drizzle-react-compon
 
 ## Installation
 
-1. Install Truffle and Ganache CLI globally. If you prefer, the graphical version of Ganache works as well!
+1. Install Truffle and Ganache CLI globally. If you prefer, the graphical version of Ganache works as well.
     ```javascript
     npm install -g truffle
     npm install -g ganache-cli
     ```
 
-2. Download the box. This also takes care of installing the necessary dependencies.
-    ```javascript
-    truffle unbox drizzle
-    ```
-
-3. Run the development blockchain, we recommend passing in a blocktime. Otherwise, its difficult to track things like loading indicators because Ganache will mine instantly.
+2. Run the development blockchain, we recommend passing in a blocktime. Otherwise, its difficult to track things like loading indicators because Ganache will mine instantly.
     ```javascript
     // 3 second blocktime.
     ganache-cli -b 3 -p 8545
     ```
+
+3. Take care of frond-end dependencies
+```javascript
+npm install
+```
 
 4. Compile and migrate the smart contracts.
     ```javascript
