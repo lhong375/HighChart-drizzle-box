@@ -3,6 +3,7 @@
 This repo is based on the drizzle-box. Drizzle-box comes with everything you need to start using smart contracts from a react app with Drizzle. It includes `drizzle`, `drizzle-react` and `drizzle-react-components` to give you a complete overview of Drizzle's capabilities.
 
 What it *adds*: demo of a quick way to bring in HighChart.
+Medium post: https://medium.com/@linda0511ny/highchart-with-drizzle-react-components-fbce2e28a3a1
 
 ## Installation
 
